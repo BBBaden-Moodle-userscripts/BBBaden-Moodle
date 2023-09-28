@@ -12,7 +12,7 @@ to the Repository: [moodle-scrollpos](https://github.com/BBBelektronik/moodle-sc
 &nbsp;
 ##### Noten Rechner - bbbaden.ch by [@PianoNic](https://github.com/pianonic)
 this userscript adds grade to Moodle quiz\
-download: [Noten Rechner - bbbaden.ch](https://github.com/black-backdoor/BBBaden-Moodle-userscripts/blob/main/scripts/Noten%20Rechner%20-%20bbbaden.ch.js)  
+download: [Noten Rechner - bbbaden.ch](https://github.com/BBBaden-Moodle-userscripts/Noten-Rechner)  
 &nbsp;
 ##### MooDL by [@reslario](https://github.com/reslario)
 A downloading tool for the BBBaden's Moodle\
