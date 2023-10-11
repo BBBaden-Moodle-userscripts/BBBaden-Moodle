@@ -1,5 +1,5 @@
 ## Description
-This is a collection of tools which improve the [Moodle BBBaden]  (https://moodle.bbbaden.ch) website.  
+This is a collection of tools which improve the [Moodle BBBaden](https://moodle.bbbaden.ch) website.  
 &nbsp;  
 [how to install userscripts](https://github.com/black-backdoor/userscript-installation-guide)
 &nbsp;  
