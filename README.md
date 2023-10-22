@@ -14,11 +14,11 @@ To the Repository: [moodle-scrollpos](https://github.com/BBBelektronik/moodle-sc
 &nbsp;
 ##### Noten Rechner - bbbaden.ch by [@PianoNic](https://github.com/pianonic)
 This userscript adds grade to Moodle quiz\
-Download: [Noten Rechner - bbbaden.ch](https://github.com/BBBaden-Moodle-userscripts/Noten-Rechner)  
+To the Repository: [Noten Rechner - bbbaden.ch](https://github.com/BBBaden-Moodle-userscripts/Noten-Rechner)  
 &nbsp;
 ##### potential-Points
 This script shows all tests in Moodle that have not yet achieved full marks.\
-Download: [potential-Points](https://github.com/BBBaden-Moodle-userscripts/potential-Points)
+To the Repository: [potential-Points](https://github.com/BBBaden-Moodle-userscripts/potential-Points)
 &nbsp;
 ##### MooDL by [@reslario](https://github.com/reslario)
 A downloading tool for the BBBaden's Moodle\
