@@ -16,7 +16,7 @@ To the Repository: [moodle-scrollpos](https://github.com/BBBelektronik/moodle-sc
 This userscript adds grade to Moodle quiz\
 To the Repository: [Noten Rechner - bbbaden.ch](https://github.com/BBBaden-Moodle-userscripts/Noten-Rechner)  
 &nbsp;
-##### potential-Points
+##### potential-Points by [@black-backdoor](https://github.com/black-backdoor)
 This script shows all tests in Moodle that have not yet achieved full marks.\
 To the Repository: [potential-Points](https://github.com/BBBaden-Moodle-userscripts/potential-Points)  
 &nbsp;
