@@ -1,7 +1,8 @@
-# Description
-This is a collection of tools which improve the [Moodle BBBaden](https://moodle.bbbaden.ch) website.
-&nbsp;  
-[how to install userscripts](https://github.com/black-backdoor/userscript-installation-guide)
+# Moodle BBBaden Userscripts
+
+Welcome to a collection of userscripts designed to enhance the [Moodle BBBaden](https://moodle.bbbaden.ch) website experience. These scripts offer various improvements and additional functionality to make your interaction with Moodle more efficient and effective.
+
+For detailed instructions on how to install userscripts, please refer to the [Userscript Installation Guide](https://github.com/black-backdoor/userscript-installation-guide).
 &nbsp;  
 ## Scripts
 ##### Compact Moodle by [@Hutch79](https://github.com/Hutch79) 
