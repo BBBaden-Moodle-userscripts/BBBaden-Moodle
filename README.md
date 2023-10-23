@@ -1,8 +1,8 @@
 # Description
-This is a collection of tools which improve the [Moodle BBBaden](https://moodle.bbbaden.ch) website.  
+This is a collection of tools which improve the [Moodle BBBaden](https://moodle.bbbaden.ch) website.
 &nbsp;  
 [how to install userscripts](https://github.com/black-backdoor/userscript-installation-guide)
-&nbsp;
+&nbsp;  
 ## Scripts
 ##### Compact Moodle by [@Hutch79](https://github.com/Hutch79) 
 This custom [Stylus](https://github.com/openstyles/stylus) script make the Moodle icons smaller\
