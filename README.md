@@ -27,3 +27,9 @@ JS script for Tampermonkey or Greasemonkey to save the scroll position in Moodle
 This userscript adds grade to Moodle quiz  
 [View Noten Rechner - bbbaden.ch](https://github.com/BBBaden-Moodle-userscripts/Noten-Rechner)   
 &nbsp;
+
+
+### quick-ID by [@black-backdoor](https://github.com/black-backdoor)
+This script allows you to open a popup, where you can enter a moodle course ID. Once you entered a course ID you will get redirected to the course with corresponding ID  
+[View quick-ID](https://github.com/BBBaden-Moodle-userscripts/quick-ID)  
+&nbsp;
