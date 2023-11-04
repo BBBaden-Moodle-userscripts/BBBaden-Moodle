@@ -115,6 +115,14 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/copy-question">GitHub</a></td>
         </tr>
+        <tr>
+            <!-- TitleTweaker -->
+            <td><img src="https://github.com/BBBaden-Moodle-userscripts/TitleTweaker/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
+            <td>TitleTweaker</td>
+            <td>TitleTweaker is an userscript that modify the course Titles </td>
+            <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
+            <td><a href="https://github.com/BBBaden-Moodle-userscripts/TitleTweaker">GitHub</a></td>
+        </tr>
     </tbody>
 </table>
 
