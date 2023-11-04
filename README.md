@@ -104,7 +104,7 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
             <td></td>
             <td>Noten-Rechner</td>
             <td></td>
-            <td><a href="hhttps://github.com/pianonic">@pianonic</a></td>
+            <td><a href="https://github.com/pianonic">@PianoNic</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/Noten-Rechner">GitHub</a></td>
         </tr>
         <tr>
