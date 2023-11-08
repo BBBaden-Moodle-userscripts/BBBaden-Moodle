@@ -119,9 +119,25 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
             <!-- TitleTweaker -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/TitleTweaker/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>TitleTweaker</td>
-            <td>TitleTweaker is an userscript that modify the course Titles </td>
+            <td>TitleTweaker is an userscript that modify the course Titles</td>
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/TitleTweaker">GitHub</a></td>
+        </tr>
+        <tr>
+            <!-- Moodle-Header-Addons  -->
+            <td></td>
+            <td>Moodle-Header-Addons</td>
+            <td>allows you to add your custom shortlink in the Moodle header</td>
+            <td><a href="https://github.com/MyDrift-user">@MyDrift-user</a></td>
+            <td><a href="https://github.com/MyDrift-user/Moodle-Header-Addons">GitHub</a></td>
+        </tr>
+        <tr>
+            <!-- EditColumnContent   -->
+            <td></td>
+            <td>EditColumnContent </td>
+            <td>allows you to remove unwanted navigation items</td>
+            <td><a href="https://github.com/MyDrift-user">@MyDrift-user</a></td>
+            <td><a href="https://github.com/MyDrift-user/EditColumnContent">GitHub</a></td>
         </tr>
     </tbody>
 </table>
