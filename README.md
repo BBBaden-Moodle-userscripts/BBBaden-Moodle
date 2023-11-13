@@ -125,7 +125,7 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
         </tr>
         <tr>
             <!-- Moodle-Header-Addons  -->
-            <td></td>
+            <td><img src="https://github.com/MyDrift-user/Moodle-Header-Addons/raw/main/header-icon.png" alt="ICON" width="30" height="30"></td>
             <td>Moodle-Header-Addons</td>
             <td>allows you to add your custom shortlink in the Moodle header</td>
             <td><a href="https://github.com/MyDrift-user">@MyDrift-user</a></td>
@@ -133,8 +133,8 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
         </tr>
         <tr>
             <!-- EditColumnContent   -->
-            <td></td>
-            <td>EditColumnContent </td>
+            <td><img src="https://github.com/MyDrift-user/EditColumnContent/raw/main/column-logo.svg" alt="ICON" width="30" height="30"></td>
+            <td>EditColumnContent</td>
             <td>allows you to remove unwanted navigation items</td>
             <td><a href="https://github.com/MyDrift-user">@MyDrift-user</a></td>
             <td><a href="https://github.com/MyDrift-user/EditColumnContent">GitHub</a></td>
