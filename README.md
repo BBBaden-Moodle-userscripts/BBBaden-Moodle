@@ -103,7 +103,7 @@ This script allows you to open a popup, where you can enter a Moodle course ID. 
         </tr>
         <tr>
             <!-- Download-All-Files -->
-            <td></td>
+            <td><img src="https://cdn.discordapp.com/attachments/1014802078201286807/1192031054807179364/MoodleDownload.png" alt="ICON" width="30" height="30"></td>
             <td>Moodle File Downloader</td>
             <td></td>
             <td><a href="https://github.com/pianonic">@PianoNic</a></td>
