@@ -96,14 +96,6 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
             <td><a href="https://github.com/BBBelektronik/moodle-scrollpos">GitHub</a></td>
         </tr>
         <tr>
-            <!-- moodle homepage remove slideshow -->
-            <td><img src="https://github.com/BBBaden-Moodle-userscripts/moodle-homepage-remove-slideshow/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
-            <td>moodle homepage remove slideshow</td>
-            <td>Dieses Script entfernt die Slideshow von der moodle.bbbaden Website</td>
-            <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
-            <td><a href="https://github.com/BBBaden-Moodle-userscripts/moodle-homepage-remove-slideshow">GitHub</a></td>
-        </tr>
-        <tr>
             <!-- HeaderFooterBeGone -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/HeaderFooterBeGone/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>HeaderFooterBeGone</td>
