@@ -111,9 +111,7 @@ This script allows you to open a popup, where you can enter a Moodle course ID. 
         </tr>
         <tr>
             <!-- copy-question -->
-            <td><img src="https://github.com/BBBaden-Moodle-userscripts/copy-question/raw
-
-/main/icon.svg" alt="ICON" width="30" height="30"></td>
+            <td><img src="https://github.com/BBBaden-Moodle-userscripts/copy-question/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>copy-question</td>
             <td>A tool that copies the contents of a Moodle test to the clipboard.</td>
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
