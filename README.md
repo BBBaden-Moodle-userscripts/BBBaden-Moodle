@@ -31,7 +31,7 @@ This user script is designed to calculate and display an approximate grade based
 &nbsp;
 
 ### Moodle File Downloader by [@PianoNic](https://github.com/pianonic)
-This UserScript allows you to download files from a Moodle course and creates a zip archive containing all the downloaded files. It is designed to work on Moodle pages that match the specified URL.
+This UserScript simplifies the process of bulk file downloads from a Moodle course by creating a zip archive for all files.
 [View Moodle File Downloader](https://github.com/BBBaden-Moodle-userscripts/Download-All-Files)   
 &nbsp;
 
