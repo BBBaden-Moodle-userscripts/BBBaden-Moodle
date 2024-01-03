@@ -33,9 +33,14 @@ JS script for Tampermonkey or Greasemonkey to save the scroll position in Moodle
 &nbsp;
 
 
-### Noten Rechner - bbbaden.ch by [@PianoNic](https://github.com/pianonic)
-This userscript adds grade to Moodle quiz  
-[View Noten Rechner - bbbaden.ch](https://github.com/BBBaden-Moodle-userscripts/Noten-Rechner)   
+### What is my approximate grade? by [@PianoNic](https://github.com/pianonic)
+This user script is designed to calculate and display an approximate grade based on the points achieved in a Moodle quiz review. It adds a new row to the quiz summary table, showing the calculated grade.
+[View What is my approximate grade?](https://github.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade)   
+&nbsp;
+
+### Moodle File Downloader by [@PianoNic](https://github.com/pianonic)
+This UserScript allows you to download files from a Moodle course and creates a zip archive containing all the downloaded files. It is designed to work on Moodle pages that match the specified URL.
+[View Moodle File Downloader](https://github.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade)   
 &nbsp;
 
 
@@ -107,12 +112,20 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/HeaderFooterBeGone">GitHub</a></td>
         </tr>
         <tr>
-            <!-- Noten-Rechner -->
+            <!-- What-is-my-approximate-grade -->
             <td></td>
-            <td>Noten-Rechner</td>
+            <td>What is my approximate grade?</td>
             <td></td>
             <td><a href="https://github.com/pianonic">@PianoNic</a></td>
-            <td><a href="https://github.com/BBBaden-Moodle-userscripts/Noten-Rechner">GitHub</a></td>
+            <td><a href="https://github.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade">GitHub</a></td>
+        </tr>
+        <tr>
+            <!-- Download-All-Files -->
+            <td></td>
+            <td>Moodle File Downloader</td>
+            <td></td>
+            <td><a href="https://github.com/pianonic">@PianoNic</a></td>
+            <td><a href="https://github.com/BBBaden-Moodle-userscripts/Download-All-Files">GitHub</a></td>
         </tr>
         <tr>
             <!-- copy-question -->
