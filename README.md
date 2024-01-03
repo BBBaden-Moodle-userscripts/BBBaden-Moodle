@@ -26,12 +26,12 @@ JS script for Tampermonkey or Greasemonkey to save the scroll position in Moodle
 &nbsp;
 
 ### What is my approximate grade? by [@PianoNic](https://github.com/pianonic)
-This user script is designed to calculate and display an approximate grade based on the points achieved in a Moodle quiz review. It adds a new row to the quiz summary table, showing the calculated grade.
+This user script is designed to calculate and display an approximate grade based on the points achieved in a Moodle quiz review. It adds a new row to the quiz summary table, showing the calculated grade.   
 [View What is my approximate grade?](https://github.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade)   
 &nbsp;
 
 ### Moodle File Downloader by [@PianoNic](https://github.com/pianonic)
-This UserScript simplifies the process of bulk file downloads from a Moodle course by creating a zip archive for all files.
+This UserScript simplifies the process of bulk file downloads from a Moodle course by creating a zip archive for all files.   
 [View Moodle File Downloader](https://github.com/BBBaden-Moodle-userscripts/Download-All-Files)   
 &nbsp;
 
