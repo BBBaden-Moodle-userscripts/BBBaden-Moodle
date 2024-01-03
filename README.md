@@ -5,33 +5,25 @@ Welcome to a collection of userscripts designed to enhance the [Moodle BBBaden](
 For detailed instructions on how to install userscripts, please refer to the [Userscript Installation Guide](https://github.com/black-backdoor/userscript-installation-guide).
 &nbsp; 
 
-
 ### **⚠️ Important Notice: Possible Disruption in Development Due to Moodle Update ⚠️**
-We are writing to inform you about a recent update to the Moodle platform at moodle.bbbaden.ch, which may impact ongoing development efforts.
-Due to the recent update, there is a possibility of disruptions in the development environment as we work to ensure compatibility with the latest Moodle version.
+We are writing to inform you about a recent update to the Moodle platform at moodle.bbbaden.ch, which may impact ongoing development efforts. Due to the recent update, there is a possibility of disruptions in the development environment as we work to ensure compatibility with the latest Moodle version.
 
-
-
-
-## popular Projects
+## Popular Projects
 
 ### Compact Moodle by [@Hutch79](https://github.com/Hutch79) 
-This custom [Stylus](https://github.com/openstyles/stylus) script make the Moodle icons smaller  
+This custom [Stylus](https://github.com/openstyles/stylus) script makes the Moodle icons smaller.  
 [View CompactMoodle](https://github.com/Hutch79/CompactMoodle)  
 &nbsp;
-
 
 ### potential-Points by [@black-backdoor](https://github.com/black-backdoor)
 This script shows all tests in Moodle that have not yet achieved full marks.  
 [View potential-Points](https://github.com/BBBaden-Moodle-userscripts/potential-Points)  
 &nbsp;
 
-
 ### moodle-scrollpos by [@BBBelektronik](https://github.com/BBBelektronik) 
 JS script for Tampermonkey or Greasemonkey to save the scroll position in Moodle courses (in Boost design) and restore it when the page is reloaded.  
 [View moodle-scrollpos](https://github.com/BBBelektronik/moodle-scrollpos)  
 &nbsp;
-
 
 ### What is my approximate grade? by [@PianoNic](https://github.com/pianonic)
 This user script is designed to calculate and display an approximate grade based on the points achieved in a Moodle quiz review. It adds a new row to the quiz summary table, showing the calculated grade.
@@ -40,17 +32,15 @@ This user script is designed to calculate and display an approximate grade based
 
 ### Moodle File Downloader by [@PianoNic](https://github.com/pianonic)
 This UserScript allows you to download files from a Moodle course and creates a zip archive containing all the downloaded files. It is designed to work on Moodle pages that match the specified URL.
-[View Moodle File Downloader](https://github.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade)   
+[View Moodle File Downloader](https://github.com/BBBaden-Moodle-userscripts/Download-All-Files)   
 &nbsp;
 
-
 ### quick-ID by [@black-backdoor](https://github.com/black-backdoor)
-This script allows you to open a popup, where you can enter a moodle course ID. Once you entered a course ID you will get redirected to the course with corresponding ID  
+This script allows you to open a popup, where you can enter a Moodle course ID. Once you enter a course ID, you will get redirected to the course with the corresponding ID.  
 [View quick-ID](https://github.com/BBBaden-Moodle-userscripts/quick-ID)  
 &nbsp;
 
-
-## all Projects
+## All Projects
 
 <table>
     <thead>
@@ -99,7 +89,7 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
             <!-- HeaderFooterBeGone -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/HeaderFooterBeGone/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>HeaderFooterBeGone</td>
-            <td>Dieses Script entfernt die Slideshow von der moodle.bbbaden Website</td>
+            <td>This script removes the Slideshow from the moodle.bbbaden Website.</td>
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/HeaderFooterBeGone">GitHub</a></td>
         </tr>
@@ -121,9 +111,11 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
         </tr>
         <tr>
             <!-- copy-question -->
-            <td><img src="https://github.com/BBBaden-Moodle-userscripts/copy-question/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
+            <td><img src="https://github.com/BBBaden-Moodle-userscripts/copy-question/raw
+
+/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>copy-question</td>
-            <td>a tool that copies the contents of a moodle test to the clipboard</td>
+            <td>A tool that copies the contents of a Moodle test to the clipboard.</td>
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/copy-question">GitHub</a></td>
         </tr>
@@ -131,7 +123,7 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
             <!-- Moodle-Header-Addons  -->
             <td><img src="https://github.com/MyDrift-user/Moodle-Header-Addons/raw/main/header-icon.png" alt="ICON" width="30" height="30"></td>
             <td>Moodle-Header-Addons</td>
-            <td>allows you to add your custom shortlink in the Moodle header</td>
+            <td>Allows you to add your custom shortlink in the Moodle header.</td>
             <td><a href="https://github.com/MyDrift-user">@MyDrift-user</a></td>
             <td><a href="https://github.com/MyDrift-user/Moodle-Header-Addons">GitHub</a></td>
         </tr>
@@ -139,13 +131,12 @@ This script allows you to open a popup, where you can enter a moodle course ID. 
             <!-- EditColumnContent   -->
             <td><img src="https://github.com/MyDrift-user/EditColumnContent/raw/main/column-logo.svg" alt="ICON" width="30" height="30"></td>
             <td>EditColumnContent</td>
-            <td>allows you to remove unwanted navigation items</td>
+            <td>Allows you to remove unwanted navigation items.</td>
             <td><a href="https://github.com/MyDrift-user">@MyDrift-user</a></td>
             <td><a href="https://github.com/MyDrift-user/EditColumnContent">GitHub</a></td>
         </tr>
     </tbody>
 </table>
 
-
 ## Contributing
-If you would like to contribute to any of the projects listed here, feel free to submit a pull request. Contributions are always welcome! 
+If you would like to contribute to any of the projects listed here, feel free to submit a pull request. Contributions are always welcome!
