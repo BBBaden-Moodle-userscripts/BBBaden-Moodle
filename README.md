@@ -5,9 +5,6 @@ Welcome to a collection of userscripts designed to enhance the [Moodle BBBaden](
 For detailed instructions on how to install userscripts, please refer to the [Userscript Installation Guide](https://github.com/black-backdoor/userscript-installation-guide).
 &nbsp; 
 
-### **⚠️ Important Notice: Possible Disruption in Development Due to Moodle Update ⚠️**
-We are writing to inform you about a recent update to the Moodle platform at moodle.bbbaden.ch, which may impact ongoing development efforts. Due to the recent update, there is a possibility of disruptions in the development environment as we work to ensure compatibility with the latest Moodle version.
-
 ## Popular Projects
 
 ### Compact Moodle by [@Hutch79](https://github.com/Hutch79) 
