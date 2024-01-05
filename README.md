@@ -10,31 +10,27 @@ For detailed instructions on how to install userscripts, please refer to the [Us
 ### Compact Moodle by [@Hutch79](https://github.com/Hutch79) 
 This custom [Stylus](https://github.com/openstyles/stylus) script makes the Moodle icons smaller.  
 [View CompactMoodle](https://github.com/Hutch79/CompactMoodle)  
-&nbsp;
+
 
 ### potential-Points by [@black-backdoor](https://github.com/black-backdoor)
 This script shows all tests in Moodle that have not yet achieved full marks.  
 [View potential-Points](https://github.com/BBBaden-Moodle-userscripts/potential-Points)  
-&nbsp;
+
 
 ### moodle-scrollpos by [@BBBelektronik](https://github.com/BBBelektronik) 
 JS script for Tampermonkey or Greasemonkey to save the scroll position in Moodle courses (in Boost design) and restore it when the page is reloaded.  
 [View moodle-scrollpos](https://github.com/BBBelektronik/moodle-scrollpos)  
-&nbsp;
+
 
 ### What is my approximate grade? by [@PianoNic](https://github.com/pianonic)
 This user script is designed to calculate and display an approximate grade based on the points achieved in a Moodle quiz review. It adds a new row to the quiz summary table, showing the calculated grade.   
 [View What is my approximate grade?](https://github.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade)   
-&nbsp;
 
-### Moodle File Downloader by [@PianoNic](https://github.com/pianonic)
-This UserScript simplifies the process of bulk file downloads from a Moodle course by creating a zip archive for all files.   
-[View Moodle File Downloader](https://github.com/BBBaden-Moodle-userscripts/Download-All-Files)   
-&nbsp;
 
 ### quick-ID by [@black-backdoor](https://github.com/black-backdoor)
 This script allows you to open a popup, where you can enter a Moodle course ID. Once you enter a course ID, you will get redirected to the course with the corresponding ID.  
 [View quick-ID](https://github.com/BBBaden-Moodle-userscripts/quick-ID)  
+
 &nbsp;
 
 ## All Projects
@@ -43,3 +39,8 @@ Can be viewed [here](https://github.com/BBBaden-Moodle-userscripts/BBBaden-Moodl
 
 ## Contributing
 If you would like to contribute to any of the projects listed here, feel free to submit a pull request. Contributions are always welcome!
+
+## Developers
+Consider utilizing one of our userscript libraries to enhance the functionality of your scripts. Our collection of libraries provides a variety of tools to streamline and improve your coding experience.
+
+For more information, you can explore the available libraries on our [Libraries](https://github.com/BBBaden-Moodle-userscripts/BBBaden-Moodle/blob/main/UserscriptLibraries.md) page. Integrating these libraries can bring added efficiency and optimization to your scripts.
