@@ -49,15 +49,6 @@
             <td><a href="https://raw.githubusercontent.com/BBBelektronik/moodle-scrollpos/main/moodle_scrollpos.user.js">Install</a></td>
         </tr>
         <tr>
-            <!-- HeaderFooterBeGone -->
-            <td><img src="https://github.com/BBBaden-Moodle-userscripts/HeaderFooterBeGone/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
-            <td>HeaderFooterBeGone</td>
-            <td>This script removes the Slideshow from the moodle.bbbaden Website.</td>
-            <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
-            <td><a href="https://github.com/BBBaden-Moodle-userscripts/HeaderFooterBeGone">GitHub</a></td>
-            <td><a href="https://github.com/BBBaden-Moodle-userscripts/HeaderFooterBeGone/raw/main/HeaderFooterBeGone.user.js">Install</a></td>
-        </tr>
-        <tr>
             <!-- What-is-my-approximate-grade -->
             <td><img src="https://uploads-ssl.webflow.com/61add382915b0a19b218de1e/64726a127f34ac9eb1149e84_test-score-sheet-with-answers-grade-a-and-pencil-2021-09-02-21-27-37-utc%20(1).jpg" alt="ICON" width="30" height="30"></td>
             <td>What is my approximate grade?</td>
