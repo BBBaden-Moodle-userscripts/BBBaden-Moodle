@@ -59,7 +59,7 @@
         </tr>
         <tr>
             <!-- Download-All-Files -->
-            <td><img src="https://cdn.discordapp.com/attachments/1014802078201286807/1192031054807179364/MoodleDownload.png" alt="ICON" width="30" height="30"></td>
+            <td><img src="https://github.com/BBBaden-Moodle-userscripts/Download-All-Files/blob/main/ico/icon.png?raw=true" alt="ICON" width="30" height="30"></td>
             <td>Moodle File Downloader</td>
             <td>UserScript wich simplifies bulk file downloads from a Moodle course, creating a zip archive for all files.</td>
             <td><a href="https://github.com/pianonic">@PianoNic</a></td>
