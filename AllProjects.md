@@ -50,7 +50,7 @@
         </tr>
         <tr>
             <!-- What-is-my-approximate-grade -->
-            <td><img src="https://uploads-ssl.webflow.com/61add382915b0a19b218de1e/64726a127f34ac9eb1149e84_test-score-sheet-with-answers-grade-a-and-pencil-2021-09-02-21-27-37-utc%20(1).jpg" alt="ICON" width="30" height="30"></td>
+            <td><img src="https://github.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade/blob/main/icon/icon.png?raw=true" alt="ICON" width="30" height="30"></td>
             <td>What is my approximate grade?</td>
             <td>UserScript which estimates grades in Moodle quizzes.</td>
             <td><a href="https://github.com/pianonic">@PianoNic</a></td>
