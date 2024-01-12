@@ -1,10 +1,4 @@
 # Moodle BBBaden Userscripts
-
-Welcome to a collection of userscripts designed to enhance the [Moodle BBBaden](https://moodle.bbbaden.ch) website experience. These scripts offer various improvements and additional functionality to make your interaction with Moodle more efficient and effective.
-
-For detailed instructions on how to install userscripts, please refer to the [Userscript Installation Guide](https://github.com/black-backdoor/userscript-installation-guide).
-&nbsp;
-
 ## All Projects
 
 Can be viewed [here](https://github.com/BBBaden-Moodle-userscripts/BBBaden-Moodle/blob/main/AllProjects.md)
