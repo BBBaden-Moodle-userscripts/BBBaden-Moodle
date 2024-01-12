@@ -69,8 +69,8 @@
         <tr>
             <!-- Mahara Portfolio Ctrl+S   -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/Mahara-Portfolio-Ctrl-S/blob/main/icon/saveIcon.png?raw=true" alt="ICON" width="30" height="30"></td>
-            <td>EditColumnContent</td>
-            <td>Allows you to remove unwanted navigation items.</td>
+            <td>Mahara Portfolio Ctrl+S</td>
+            <td>Presses the save button when Ctrl + S is pressed</td>
             <td><a href="https://github.com/pianonic">@PianoNic</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/Mahara-Portfolio-Ctrl-S">GitHub</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/Mahara-Portfolio-Ctrl-S/raw/main/Mahara-Portfolio-Ctrl-S.user.js">Install</a></td>
