@@ -32,7 +32,7 @@
         </tr>
         <tr>
             <!-- potential-Points -->
-            <td><img src="https://github.com/BBBaden-Moodle-userscripts/potential-Points/icon/raw/main/icon.png" alt="ICON" width="30" height="30"></td>
+            <td><img src="https://github.com/BBBaden-Moodle-userscripts/potential-Points/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>potential-Points</td>
             <td>Display incomplete test scores in Moodle.</td>
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
