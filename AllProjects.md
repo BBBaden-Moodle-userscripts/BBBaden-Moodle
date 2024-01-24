@@ -94,15 +94,6 @@
             <td><a href="https://github.com/MyDrift-user/Moodle-Header-Addons/raw/main/Moodle-Header-Addons.user.js">Install</a></td>
         </tr>
         <tr>
-            <!-- EditColumnContent   -->
-            <td><img src="https://github.com/MyDrift-user/EditColumnContent/raw/main/column-logo.svg" alt="ICON" width="30" height="30"></td>
-            <td>EditColumnContent</td>
-            <td>Allows you to remove unwanted navigation items.</td>
-            <td><a href="https://github.com/MyDrift-user">@MyDrift-user</a></td>
-            <td><a href="https://github.com/MyDrift-user/EditColumnContent">GitHub</a></td>
-            <td><a href="https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js">Install</a></td>
-        </tr
-        <tr>
             <!-- CompactFrontpage -->
             <td><img src="https://github.com/MyDrift-user/CompactFrontpage/blob/main/compact.png?raw=true" alt="ICON" width="30" height="30"></td>
             <td>CompactFrontpage</td>
