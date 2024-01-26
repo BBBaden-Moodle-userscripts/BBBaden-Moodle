@@ -102,5 +102,14 @@
             <td><a href="https://github.com/MyDrift-user/CompactFrontpage">GitHub</a></td>
             <td><a href="https://github.com/MyDrift-user/CompactFrontpage/raw/main/CompactFrontpage.user.js">Install</a></td>
         </tr>
+        <tr>
+            <!-- StartPagePrettified -->
+            <td></td>
+            <td>StartPagePrettified</td>
+            <td></td>
+            <td><a href="https://github.com/MyDrift-user">@MyDrift-user</a></td>
+            <td><a href="https://github.com/BBBaden-Moodle-userscripts/StartPagePrettified">GitHub</a></td>
+            <td><a href="https://github.com/BBBaden-Moodle-userscripts/StartPagePrettified/raw/main/StartPagePrettified.user.js">Install</a></td>
+        </tr>
     </tbody>
 </table>
