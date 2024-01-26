@@ -107,7 +107,7 @@
             <td></td>
             <td>StartPagePrettified</td>
             <td></td>
-            <td><a href="https://github.com/MyDrift-user">@MyDrift-user</a></td>
+            <td><a href="https://github.com/Pianonic">PianoNic</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/StartPagePrettified">GitHub</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/StartPagePrettified/raw/main/StartPagePrettified.user.js">Install</a></td>
         </tr>
