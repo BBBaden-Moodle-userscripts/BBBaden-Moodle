@@ -111,5 +111,14 @@
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/StartPagePrettified">GitHub</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/StartPagePrettified/raw/main/StartPagePrettified.user.js">Install</a></td>
         </tr>
+        <tr>
+            <!-- MidnightMoodle -->
+            <td></td>
+            <td>MidnightMoodle</td>
+            <td>Don't get blind on Sunday night before submission time</td>
+            <td><a href="https://github.com/MyDrift-user">@MyDrift-user</a></td>
+            <td><a href="https://github.com/MyDrift-user/MidnightMoodle">GitHub</a></td>
+            <td><a href="https://github.com/MyDrift-user/MidnightMoodle/raw/main/MidnightMoodle.user.css">Install</a></td>
+        </tr>
     </tbody>
 </table>
