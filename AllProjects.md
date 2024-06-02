@@ -76,6 +76,15 @@
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/Mahara-Portfolio-Ctrl-S/raw/main/Mahara-Portfolio-Ctrl-S.user.js">Install</a></td>
         </tr>
         <tr>
+            <!-- Media Player   -->
+            <td><img src="https://github.com/BBBaden-Moodle-userscripts/MediaPlayer/blob/main/icon/playerIcon.png?raw=true" alt="ICON" width="30" height="30"></td>
+            <td>Moodle Media Player</td>
+            <td>Media Player for mp4 and mp3 links</td>
+            <td><a href="https://github.com/pianonic">@PianoNic</a></td>
+            <td><a href="https://github.com/BBBaden-Moodle-userscripts/MediaPlayer">GitHub</a></td>
+            <td><a href="https://github.com/BBBaden-Moodle-userscripts/MediaPlayer/raw/main/MediaPlayer.user.js">Install</a></td>
+        </tr>
+        <tr>
             <!-- copy-question -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/copy-question/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>copy-question</td>
