@@ -1,4 +1,7 @@
-## All Projects
+# All Projects
+
+
+## UserStyles
 
 <table>
     <thead>
@@ -13,6 +16,42 @@
     </thead>
     <tbody>
         <tr>
+            <!-- CompactMoodle -->
+            <td></td>
+            <td>CompactMoodle</td>
+            <td>Smaller Moodle icons for a compact layout.</td>
+            <td><a href="https://github.com/Hutch79">@Hutch79</a></td>
+            <td><a href="https://github.com/Hutch79/CompactMoodle">GitHub</a></td>
+            <td><a href="https://raw.githubusercontent.com/Hutch79/CompactMoodle/main/compactMoodle.user.css">Install</a></td>
+        </tr>
+    </body>
+</table>
+
+
+## UserScripts
+
+<table>
+    <thead>
+        <tr>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Author</th>
+            <th>Link</th>
+            <th>Install</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- moodle-scrollpos -->
+            <td></td>
+            <td>moodle-scrollpos</td>
+            <td>Save and restore scroll position in Moodle.</td>
+            <td><a href="https://github.com/BBBelektronik">@BBBelektronik</a></td>
+            <td><a href="https://github.com/BBBelektronik/moodle-scrollpos">GitHub</a></td>
+            <td><a href="https://raw.githubusercontent.com/BBBelektronik/moodle-scrollpos/main/moodle_scrollpos.user.js">Install</a></td>
+        </tr>
+        <tr>
             <!-- quick ID -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/quick-ID/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>quick-ID</td>
@@ -22,15 +61,6 @@
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/quick-ID/raw/main/quick-ID.user.js">Install</a></td>
         </tr>
         <tr>
-            <!-- CompactMoodle -->
-            <td></td>
-            <td>CompactMoodle</td>
-            <td>Smaller Moodle icons for a compact layout.</td>
-            <td><a href="https://github.com/Hutch79">@Hutch79</a></td>
-            <td><a href="https://github.com/Hutch79/CompactMoodle">GitHub</a></td>
-            <td><a href="https://raw.githubusercontent.com/Hutch79/CompactMoodle/main/compactMoodle.user.css">Install</a></td>
-        </tr>
-        <tr>
             <!-- potential-Points -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/potential-Points/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>potential-Points</td>
@@ -38,15 +68,6 @@
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/potential-Points">GitHub</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/potential-Points/raw/main/potential_points.user.js">Install</a></td>
-        </tr>
-        <tr>
-            <!-- moodle-scrollpos -->
-            <td></td>
-            <td>moodle-scrollpos</td>
-            <td>Save and restore scroll position in Moodle.</td>
-            <td><a href="https://github.com/BBBelektronik">@BBBelektronik</a></td>
-            <td><a href="https://github.com/BBBelektronik/moodle-scrollpos">GitHub</a></td>
-            <td><a href="https://raw.githubusercontent.com/BBBelektronik/moodle-scrollpos/main/moodle_scrollpos.user.js">Install</a></td>
         </tr>
         <tr>
             <!-- What-is-my-approximate-grade -->
