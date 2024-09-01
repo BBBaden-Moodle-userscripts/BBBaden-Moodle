@@ -1,33 +1,5 @@
 # All Projects
 
-
-## UserStyles
-
-<table>
-    <thead>
-        <tr>
-            <th>Icon</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Author</th>
-            <th>Link</th>
-            <th>Install</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <!-- CompactMoodle -->
-            <td></td>
-            <td>CompactMoodle</td>
-            <td>Smaller Moodle icons for a compact layout.</td>
-            <td><a href="https://github.com/Hutch79">@Hutch79</a></td>
-            <td><a href="https://github.com/Hutch79/CompactMoodle">GitHub</a></td>
-            <td><a href="https://raw.githubusercontent.com/Hutch79/CompactMoodle/main/compactMoodle.user.css">Install</a></td>
-        </tr>
-    </body>
-</table>
-
-
 ## UserScripts
 
 <table>
@@ -142,4 +114,30 @@
             <td><a href="https://github.com/MyDrift-user/MidnightMoodle/raw/main/MidnightMoodle.user.css">Install</a></td>
         </tr>
     </tbody>
+</table>
+
+## UserStyles
+
+<table>
+    <thead>
+        <tr>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Author</th>
+            <th>Link</th>
+            <th>Install</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- CompactMoodle -->
+            <td></td>
+            <td>CompactMoodle</td>
+            <td>Smaller Moodle icons for a compact layout.</td>
+            <td><a href="https://github.com/Hutch79">@Hutch79</a></td>
+            <td><a href="https://github.com/Hutch79/CompactMoodle">GitHub</a></td>
+            <td><a href="https://raw.githubusercontent.com/Hutch79/CompactMoodle/main/compactMoodle.user.css">Install</a></td>
+        </tr>
+    </body>
 </table>
