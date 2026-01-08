@@ -97,74 +97,69 @@ async function fetchRepoContents(owner, repo, path = '', branch = null) {
 
   const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`;
   try {
-    return await githubRequest(url);
+    const result = await githubRequest(url);
+    return Array.isArray(result) ? result : [];
   } catch (error) {
-    // If default branch fails, try 'master' as fallback
-    if (branch !== 'master') {
-      try {
-        const masterUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=master`;
-        return await githubRequest(masterUrl);
-      } catch (masterError) {
-        console.error(`Error fetching contents for ${owner}/${repo}: ${error.message}`);
-        return [];
-      }
+    // Only log 404s for root directory, not for optional icon directories
+    if (!path || path === '') {
+      console.error(`Error fetching contents for ${owner}/${repo}: ${error.message}`);
     }
-    console.error(`Error fetching contents for ${owner}/${repo}: ${error.message}`);
     return [];
   }
 }
 
-// Function to search for userscript/userstyle files in a repository
-async function findUserscriptFiles(owner, repo) {
-  const contents = await fetchRepoContents(owner, repo);
+// Function to search for userscript/userstyle files and icons in a repository
+async function analyzeRepository(owner, repo, branch) {
+  const contents = await fetchRepoContents(owner, repo, '', branch);
   const userscripts = [];
   const userstyles = [];
+  let icon = null;
+
+  const iconPatterns = ['icon.svg', 'icon.png', 'icon.jpg'];
+  const iconDirs = [];
 
   for (const item of contents) {
     if (item.type === 'file') {
+      // Check for userscripts/userstyles
       if (item.name.endsWith('.user.js')) {
         userscripts.push(item);
       } else if (item.name.endsWith('.user.css')) {
         userstyles.push(item);
       }
-    }
-  }
 
-  return { userscripts, userstyles };
-}
-
-// Function to find icon in repository
-async function findIcon(owner, repo, branch = null) {
-  if (!branch) {
-    branch = await getDefaultBranch(owner, repo);
-  }
-
-  const contents = await fetchRepoContents(owner, repo, '', branch);
-  const iconPatterns = ['icon.svg', 'icon.png', 'icon.jpg'];
-
-  // Check root directory
-  for (const item of contents) {
-    if (item.type === 'file' && iconPatterns.includes(item.name.toLowerCase())) {
-      return `https://github.com/${owner}/${repo}/raw/${branch}/${item.name}`;
-    }
-  }
-
-  // Check common icon directories
-  const iconDirs = ['icon', 'icons', 'ico', 'assets', 'images'];
-  for (const dir of iconDirs) {
-    try {
-      const dirContents = await fetchRepoContents(owner, repo, dir, branch);
-      for (const item of dirContents) {
-        if (item.type === 'file' && (item.name.toLowerCase().includes('icon') || iconPatterns.some(p => item.name.toLowerCase().includes(p.split('.')[0])))) {
-          return `https://github.com/${owner}/${repo}/raw/${branch}/${dir}/${item.name}`;
-        }
+      // Check for icon in root
+      if (!icon && iconPatterns.includes(item.name.toLowerCase())) {
+        icon = `https://github.com/${owner}/${repo}/raw/${branch}/${item.name}`;
       }
-    } catch (error) {
-      // Directory doesn't exist, continue
+    } else if (item.type === 'dir') {
+      // Track directories that might contain icons
+      const dirName = item.name.toLowerCase();
+      if (['icon', 'icons', 'ico', 'assets', 'images'].includes(dirName)) {
+        iconDirs.push(item.name);
+      }
     }
   }
 
-  return null;
+  // If no icon in root, check icon directories
+  if (!icon && iconDirs.length > 0) {
+    for (const dir of iconDirs) {
+      if (icon) break; // Stop once we find an icon
+
+      try {
+        const dirContents = await fetchRepoContents(owner, repo, dir, branch);
+        for (const item of dirContents) {
+          if (item.type === 'file' && (item.name.toLowerCase().includes('icon') || iconPatterns.some(p => item.name.toLowerCase().includes(p.split('.')[0])))) {
+            icon = `https://github.com/${owner}/${repo}/raw/${branch}/${dir}/${item.name}`;
+            break;
+          }
+        }
+      } catch (error) {
+        // Directory read failed, skip
+      }
+    }
+  }
+
+  return { userscripts, userstyles, icon };
 }
 
 // Function to extract author from repository
@@ -195,11 +190,13 @@ async function processRepository(repo) {
   const userscripts = [];
   const userstyles = [];
 
-  const { userscripts: repoUserscripts, userstyles: repoUserstyles } = await findUserscriptFiles(repo.owner.login, repo.name);
+  // Get default branch first (single API call)
+  const branch = repo.default_branch || await getDefaultBranch(repo.owner.login, repo.name);
+
+  // Analyze repository in one go to minimize API calls
+  const { userscripts: repoUserscripts, userstyles: repoUserstyles, icon } = await analyzeRepository(repo.owner.login, repo.name, branch);
 
   if (repoUserscripts.length > 0 || repoUserstyles.length > 0) {
-    const branch = await getDefaultBranch(repo.owner.login, repo.name);
-    const icon = await findIcon(repo.owner.login, repo.name, branch);
     const author = getAuthor(repo);
 
     // Process userscripts
@@ -209,7 +206,7 @@ async function processRepository(repo) {
         description: repo.description || '',
         author: author,
         repoUrl: repo.html_url,
-        installUrl: script.download_url.replace('/main/', `/${branch}/`),
+        installUrl: script.download_url,
         icon: icon
       });
     }
@@ -221,7 +218,7 @@ async function processRepository(repo) {
         description: repo.description || '',
         author: author,
         repoUrl: repo.html_url,
-        installUrl: style.download_url.replace('/main/', `/${branch}/`),
+        installUrl: style.download_url,
         icon: icon
       });
     }
