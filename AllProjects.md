@@ -140,6 +140,41 @@
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/LoggingLibrary">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/LoggingLibrary/main/Logging.lib.user.js">Install</a></td>
         </tr>
+        <tr>
+            <!-- moodle-scrollpos -->
+            <td></td>
+            <td>moodle-scrollpos</td>
+            <td>JS-Skript für Tampermonkey um in Moodle-Kursen (im Boost Design) die Scroll-Position zu speichern und wiederherzustellen.</td>
+            <td><a href="https://github.com/BBBelektronik">@BBBelektronik</a></td>
+            <td><a href="https://github.com/BBBelektronik/moodle-scrollpos">GitHub</a></td>
+            <td><a href="https://raw.githubusercontent.com/BBBelektronik/moodle-scrollpos/main/moodle_scrollpos.user.js">Install</a></td>
+        </tr>
+    </tbody>
+</table>
+
+## UserStyles
+
+<table>
+    <thead>
+        <tr>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Author</th>
+            <th>Link</th>
+            <th>Install</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- CompactMoodle -->
+            <td></td>
+            <td>CompactMoodle</td>
+            <td>The Moodle designe is to blown up? Even after zooming out to 50%? This Addon eliminates empty space and tidies up the design.</td>
+            <td><a href="https://github.com/Hutch79">@Hutch79</a></td>
+            <td><a href="https://github.com/Hutch79/CompactMoodle">GitHub</a></td>
+            <td><a href="https://raw.githubusercontent.com/Hutch79/CompactMoodle/main/compactMoodle.user.css">Install</a></td>
+        </tr>
     </tbody>
 </table>
 
