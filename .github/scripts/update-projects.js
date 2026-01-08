@@ -264,7 +264,8 @@ async function processRepository(repo) {
         author: author,
         repoUrl: repo.html_url,
         installUrl: script.download_url,
-        icon: icon
+        icon: icon,
+        archived: repo.archived || false
       });
     }
 
@@ -276,7 +277,8 @@ async function processRepository(repo) {
         author: author,
         repoUrl: repo.html_url,
         installUrl: style.download_url,
-        icon: icon
+        icon: icon,
+        archived: repo.archived || false
       });
     }
   }
@@ -344,8 +346,12 @@ function generateMarkdownTable(items, type) {
       markdown += `            <td></td>\n`;
     }
 
-    // Name column
-    markdown += `            <td>${item.name}</td>\n`;
+    // Name column with archived badge
+    if (item.archived) {
+      markdown += `            <td>${item.name} <img src="https://img.shields.io/badge/archived-red" alt="Archived"></td>\n`;
+    } else {
+      markdown += `            <td>${item.name}</td>\n`;
+    }
 
     // Description column
     markdown += `            <td>${item.description}</td>\n`;
