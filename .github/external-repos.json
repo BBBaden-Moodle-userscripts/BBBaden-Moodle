@@ -1,21 +1,9 @@
 {
-  "comment": "Add external repositories here that should be included in the AllProjects.md table",
+  "comment": "Add external repositories here that should be included in the AllProjects.md table. Only repositories containing .user.js or .user.css files will be displayed.",
   "repositories": [
     {
       "owner": "BBBelektronik",
       "repo": "moodle-scrollpos"
-    },
-    {
-      "owner": "MyDrift-user",
-      "repo": "Moodle-Header-Addons"
-    },
-    {
-      "owner": "MyDrift-user",
-      "repo": "CompactFrontpage"
-    },
-    {
-      "owner": "MyDrift-user",
-      "repo": "MidnightMoodle"
     },
     {
       "owner": "Hutch79",
