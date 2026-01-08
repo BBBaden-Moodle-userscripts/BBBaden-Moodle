@@ -265,7 +265,8 @@ async function processRepository(repo) {
         repoUrl: repo.html_url,
         installUrl: script.download_url,
         icon: icon,
-        archived: repo.archived || false
+        archived: repo.archived || false,
+        lastUpdated: repo.updated_at || repo.pushed_at || ''
       });
     }
 
@@ -278,7 +279,8 @@ async function processRepository(repo) {
         repoUrl: repo.html_url,
         installUrl: style.download_url,
         icon: icon,
-        archived: repo.archived || false
+        archived: repo.archived || false,
+        lastUpdated: repo.updated_at || repo.pushed_at || ''
       });
     }
   }
@@ -319,6 +321,22 @@ async function processRepositories() {
   return { userscripts, userstyles };
 }
 
+// Function to format date
+function formatDate(dateString) {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  const now = new Date();
+  const diffTime = Math.abs(now - date);
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+  if (diffDays === 0) return 'Today';
+  if (diffDays === 1) return 'Yesterday';
+  if (diffDays < 7) return `${diffDays} days ago`;
+  if (diffDays < 30) return `${Math.floor(diffDays / 7)} weeks ago`;
+  if (diffDays < 365) return `${Math.floor(diffDays / 30)} months ago`;
+  return `${Math.floor(diffDays / 365)} years ago`;
+}
+
 // Function to generate markdown table
 function generateMarkdownTable(items, type) {
   let markdown = `## ${type}\n\n`;
@@ -329,6 +347,7 @@ function generateMarkdownTable(items, type) {
   markdown += `            <th>Name</th>\n`;
   markdown += `            <th>Description</th>\n`;
   markdown += `            <th>Author</th>\n`;
+  markdown += `            <th>Last Updated</th>\n`;
   markdown += `            <th>Link</th>\n`;
   markdown += `            <th>Install</th>\n`;
   markdown += `        </tr>\n`;
@@ -362,6 +381,9 @@ function generateMarkdownTable(items, type) {
     } else {
       markdown += `            <td></td>\n`;
     }
+
+    // Last Updated column
+    markdown += `            <td>${formatDate(item.lastUpdated)}</td>\n`;
 
     // Link column
     markdown += `            <td><a href="${item.repoUrl}">GitHub</a></td>\n`;
