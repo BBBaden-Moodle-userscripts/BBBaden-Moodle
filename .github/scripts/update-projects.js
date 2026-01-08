@@ -120,8 +120,8 @@ async function analyzeRepository(owner, repo, branch) {
 
   for (const item of contents) {
     if (item.type === 'file') {
-      // Check for userscripts/userstyles
-      if (item.name.endsWith('.user.js')) {
+      // Check for userscripts/userstyles (exclude libraries)
+      if (item.name.endsWith('.user.js') && !item.name.endsWith('.lib.user.js')) {
         userscripts.push(item);
       } else if (item.name.endsWith('.user.css')) {
         userstyles.push(item);
@@ -162,15 +162,72 @@ async function analyzeRepository(owner, repo, branch) {
   return { userscripts, userstyles, icon };
 }
 
+// Function to get the primary author from commit history
+async function getPrimaryAuthor(owner, repo) {
+  try {
+    // Fetch recent commits to find the primary contributor
+    const url = `https://api.github.com/repos/${owner}/${repo}/commits?per_page=100`;
+    const commits = await githubRequest(url);
+
+    if (commits && commits.length > 0) {
+      // Count commits per author
+      const authorCounts = {};
+
+      for (const commit of commits) {
+        if (commit.author && commit.author.login) {
+          const login = commit.author.login;
+          // Skip bots and automated accounts
+          if (!login.includes('[bot]') && login !== 'github-actions') {
+            authorCounts[login] = (authorCounts[login] || 0) + 1;
+          }
+        }
+      }
+
+      // Find the author with most commits
+      let primaryAuthor = null;
+      let maxCommits = 0;
+
+      for (const [login, count] of Object.entries(authorCounts)) {
+        if (count > maxCommits) {
+          maxCommits = count;
+          primaryAuthor = login;
+        }
+      }
+
+      if (primaryAuthor) {
+        // Get the full author info from the commits
+        const authorCommit = commits.find(c => c.author && c.author.login === primaryAuthor);
+        if (authorCommit && authorCommit.author) {
+          return {
+            username: authorCommit.author.login,
+            url: authorCommit.author.html_url
+          };
+        }
+      }
+    }
+  } catch (error) {
+    // If we can't get commit history, fall back to owner
+  }
+
+  return null;
+}
+
 // Function to extract author from repository
-function getAuthor(repo) {
-  // Try to get from owner
-  if (repo.owner && repo.owner.login) {
+async function getAuthor(owner, repo, repoData) {
+  // First try to get the primary author from commits
+  const commitAuthor = await getPrimaryAuthor(owner, repo);
+  if (commitAuthor) {
+    return commitAuthor;
+  }
+
+  // Fall back to repository owner
+  if (repoData.owner && repoData.owner.login) {
     return {
-      username: repo.owner.login,
-      url: repo.owner.html_url
+      username: repoData.owner.login,
+      url: repoData.owner.html_url
     };
   }
+
   return null;
 }
 
@@ -197,7 +254,7 @@ async function processRepository(repo) {
   const { userscripts: repoUserscripts, userstyles: repoUserstyles, icon } = await analyzeRepository(repo.owner.login, repo.name, branch);
 
   if (repoUserscripts.length > 0 || repoUserstyles.length > 0) {
-    const author = getAuthor(repo);
+    const author = await getAuthor(repo.owner.login, repo.name, repo);
 
     // Process userscripts
     for (const script of repoUserscripts) {
