@@ -1,0 +1,25 @@
+{
+  "comment": "Add external repositories here that should be included in the AllProjects.md table",
+  "repositories": [
+    {
+      "owner": "BBBelektronik",
+      "repo": "moodle-scrollpos"
+    },
+    {
+      "owner": "MyDrift-user",
+      "repo": "Moodle-Header-Addons"
+    },
+    {
+      "owner": "MyDrift-user",
+      "repo": "CompactFrontpage"
+    },
+    {
+      "owner": "MyDrift-user",
+      "repo": "MidnightMoodle"
+    },
+    {
+      "owner": "Hutch79",
+      "repo": "CompactMoodle"
+    }
+  ]
+}

@@ -7,6 +7,25 @@ const path = require('path');
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const ORG_NAME = 'BBBaden-Moodle-userscripts';
 
+// Load external repositories from config file
+let EXTERNAL_REPOS = [];
+try {
+  const configPath = path.join(__dirname, '../external-repos.json');
+  if (fs.existsSync(configPath)) {
+    const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+    EXTERNAL_REPOS = config.repositories || [];
+  }
+} catch (error) {
+  console.warn('Could not load external-repos.json, using default list');
+  EXTERNAL_REPOS = [
+    { owner: 'BBBelektronik', repo: 'moodle-scrollpos' },
+    { owner: 'MyDrift-user', repo: 'Moodle-Header-Addons' },
+    { owner: 'MyDrift-user', repo: 'CompactFrontpage' },
+    { owner: 'MyDrift-user', repo: 'MidnightMoodle' },
+    { owner: 'Hutch79', repo: 'CompactMoodle' }
+  ];
+}
+
 // Function to make GitHub API requests
 function githubRequest(url) {
   return new Promise((resolve, reject) => {
@@ -59,12 +78,37 @@ async function fetchOrgRepos() {
   return repos;
 }
 
+// Function to get repository default branch
+async function getDefaultBranch(owner, repo) {
+  const url = `https://api.github.com/repos/${owner}/${repo}`;
+  try {
+    const data = await githubRequest(url);
+    return data.default_branch || 'main';
+  } catch (error) {
+    return 'main';
+  }
+}
+
 // Function to fetch repository contents to find userscripts
-async function fetchRepoContents(owner, repo, path = '') {
-  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+async function fetchRepoContents(owner, repo, path = '', branch = null) {
+  if (!branch) {
+    branch = await getDefaultBranch(owner, repo);
+  }
+
+  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`;
   try {
     return await githubRequest(url);
   } catch (error) {
+    // If default branch fails, try 'master' as fallback
+    if (branch !== 'master') {
+      try {
+        const masterUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=master`;
+        return await githubRequest(masterUrl);
+      } catch (masterError) {
+        console.error(`Error fetching contents for ${owner}/${repo}: ${error.message}`);
+        return [];
+      }
+    }
     console.error(`Error fetching contents for ${owner}/${repo}: ${error.message}`);
     return [];
   }
@@ -90,14 +134,18 @@ async function findUserscriptFiles(owner, repo) {
 }
 
 // Function to find icon in repository
-async function findIcon(owner, repo) {
-  const contents = await fetchRepoContents(owner, repo);
+async function findIcon(owner, repo, branch = null) {
+  if (!branch) {
+    branch = await getDefaultBranch(owner, repo);
+  }
+
+  const contents = await fetchRepoContents(owner, repo, '', branch);
   const iconPatterns = ['icon.svg', 'icon.png', 'icon.jpg'];
 
   // Check root directory
   for (const item of contents) {
     if (item.type === 'file' && iconPatterns.includes(item.name.toLowerCase())) {
-      return `https://github.com/${owner}/${repo}/raw/main/${item.name}`;
+      return `https://github.com/${owner}/${repo}/raw/${branch}/${item.name}`;
     }
   }
 
@@ -105,10 +153,10 @@ async function findIcon(owner, repo) {
   const iconDirs = ['icon', 'icons', 'ico', 'assets', 'images'];
   for (const dir of iconDirs) {
     try {
-      const dirContents = await fetchRepoContents(owner, repo, dir);
+      const dirContents = await fetchRepoContents(owner, repo, dir, branch);
       for (const item of dirContents) {
         if (item.type === 'file' && (item.name.toLowerCase().includes('icon') || iconPatterns.some(p => item.name.toLowerCase().includes(p.split('.')[0])))) {
-          return `https://github.com/${owner}/${repo}/raw/main/${dir}/${item.name}`;
+          return `https://github.com/${owner}/${repo}/raw/${branch}/${dir}/${item.name}`;
         }
       }
     } catch (error) {
@@ -131,48 +179,84 @@ function getAuthor(repo) {
   return null;
 }
 
+// Function to fetch external repository data
+async function fetchExternalRepo(owner, repo) {
+  const url = `https://api.github.com/repos/${owner}/${repo}`;
+  try {
+    return await githubRequest(url);
+  } catch (error) {
+    console.error(`Error fetching external repo ${owner}/${repo}: ${error.message}`);
+    return null;
+  }
+}
+
+// Function to process a single repository
+async function processRepository(repo) {
+  const userscripts = [];
+  const userstyles = [];
+
+  const { userscripts: repoUserscripts, userstyles: repoUserstyles } = await findUserscriptFiles(repo.owner.login, repo.name);
+
+  if (repoUserscripts.length > 0 || repoUserstyles.length > 0) {
+    const branch = await getDefaultBranch(repo.owner.login, repo.name);
+    const icon = await findIcon(repo.owner.login, repo.name, branch);
+    const author = getAuthor(repo);
+
+    // Process userscripts
+    for (const script of repoUserscripts) {
+      userscripts.push({
+        name: repo.name,
+        description: repo.description || '',
+        author: author,
+        repoUrl: repo.html_url,
+        installUrl: script.download_url.replace('/main/', `/${branch}/`),
+        icon: icon
+      });
+    }
+
+    // Process userstyles
+    for (const style of repoUserstyles) {
+      userstyles.push({
+        name: repo.name,
+        description: repo.description || '',
+        author: author,
+        repoUrl: repo.html_url,
+        installUrl: style.download_url.replace('/main/', `/${branch}/`),
+        icon: icon
+      });
+    }
+  }
+
+  return { userscripts, userstyles };
+}
+
 // Function to process repositories and extract relevant information
 async function processRepositories() {
   console.log('Fetching repositories from organization...');
-  const repos = await fetchOrgRepos();
+  const orgRepos = await fetchOrgRepos();
 
   const userscripts = [];
   const userstyles = [];
 
-  console.log(`Found ${repos.length} repositories. Processing...`);
+  console.log(`Found ${orgRepos.length} repositories from organization. Processing...`);
 
-  for (const repo of repos) {
+  // Process organization repositories
+  for (const repo of orgRepos) {
     console.log(`Processing ${repo.name}...`);
+    const { userscripts: repoUserscripts, userstyles: repoUserstyles } = await processRepository(repo);
+    userscripts.push(...repoUserscripts);
+    userstyles.push(...repoUserstyles);
+  }
 
-    const { userscripts: repoUserscripts, userstyles: repoUserstyles } = await findUserscriptFiles(repo.owner.login, repo.name);
-
-    if (repoUserscripts.length > 0 || repoUserstyles.length > 0) {
-      const icon = await findIcon(repo.owner.login, repo.name);
-      const author = getAuthor(repo);
-
-      // Process userscripts
-      for (const script of repoUserscripts) {
-        userscripts.push({
-          name: repo.name,
-          description: repo.description || '',
-          author: author,
-          repoUrl: repo.html_url,
-          installUrl: script.download_url,
-          icon: icon
-        });
-      }
-
-      // Process userstyles
-      for (const style of repoUserstyles) {
-        userstyles.push({
-          name: repo.name,
-          description: repo.description || '',
-          author: author,
-          repoUrl: repo.html_url,
-          installUrl: style.download_url,
-          icon: icon
-        });
-      }
+  // Process external repositories
+  console.log(`\nProcessing ${EXTERNAL_REPOS.length} external repositories...`);
+  for (const { owner, repo: repoName } of EXTERNAL_REPOS) {
+    console.log(`Processing external ${owner}/${repoName}...`);
+    const repo = await fetchExternalRepo(owner, repoName);
+    if (repo) {
+      const { userscripts: repoUserscripts, userstyles: repoUserstyles } = await processRepository(repo);
+      userscripts.push(...repoUserscripts);
+      userstyles.push(...repoUserstyles);
     }
   }
 
