@@ -18,7 +18,7 @@
             <!-- What-is-my-approximate-grade -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade/raw/main/icon/icon.png" alt="ICON" width="30" height="30"></td>
             <td>What-is-my-approximate-grade</td>
-            <td></td>
+            <td>Designed to calculate and display an approximate grade based on the points achieved in a Moodle quiz review</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts">@BBBaden-Moodle-userscripts</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade/main/approximate_grade.user.js">Install</a></td>
@@ -27,7 +27,7 @@
             <!-- quick-ID -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/quick-ID/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>quick-ID</td>
-            <td></td>
+            <td>Öffnet einen Dialog, in dem Sie eine Kurs-ID eingeben können, um direkt dorthin weitergeleitet zu werden.</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts">@BBBaden-Moodle-userscripts</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/quick-ID">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/quick-ID/main/quick-ID.user.js">Install</a></td>
@@ -36,7 +36,7 @@
             <!-- potential-Points -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/potential-Points/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
             <td>potential-Points</td>
-            <td></td>
+            <td>Zeigt alle Tests in Moodle an die noch nicht die volle Punktzahl erzielt haben.</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts">@BBBaden-Moodle-userscripts</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/potential-Points">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/potential-Points/main/potential_points.user.js">Install</a></td>
