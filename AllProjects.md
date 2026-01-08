@@ -45,7 +45,7 @@
             <!-- Download-All-Files -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/Download-All-Files/raw/main/ico/icon.png" alt="ICON" width="30" height="30"></td>
             <td>Download-All-Files</td>
-            <td></td>
+            <td>Allows you to download files from a Moodle course and creates a zip archive containing all the downloaded files</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/Download-All-Files">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/Download-All-Files/main/download-all-files.user.js">Install</a></td>
@@ -72,7 +72,7 @@
             <!-- StartPagePrettified -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/StartPagePrettified/raw/main/icon/icon.png" alt="ICON" width="30" height="30"></td>
             <td>StartPagePrettified</td>
-            <td></td>
+            <td>Prettifies the Startpage</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/StartPagePrettified">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/StartPagePrettified/main/StartPagePrettified.user.js">Install</a></td>
@@ -81,7 +81,7 @@
             <!-- MediaPlayer -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/MediaPlayer/raw/main/icon/playerIcon.png" alt="ICON" width="30" height="30"></td>
             <td>MediaPlayer</td>
-            <td></td>
+            <td>Enhances the media playback experience on web pages by providing a convenient modal interface for MP4 and MP3 links</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/MediaPlayer">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/MediaPlayer/main/MediaPlayer.user.js">Install</a></td>
@@ -90,7 +90,7 @@
             <!-- OptimizedContentList -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/OptimizedContentList/raw/main/icons/icon.png" alt="ICON" width="30" height="30"></td>
             <td>OptimizedContentList</td>
-            <td></td>
+            <td>Optimizes the content list</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/OptimizedContentList">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/OptimizedContentList/main/OptimizedContentList.user.js">Install</a></td>
