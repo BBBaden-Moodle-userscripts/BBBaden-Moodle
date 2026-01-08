@@ -35,7 +35,7 @@
         <tr>
             <!-- potential-Points -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/potential-Points/raw/main/icon.svg" alt="ICON" width="30" height="30"></td>
-            <td>potential-Points</td>
+            <td>potential-Points <img src="https://img.shields.io/badge/archived-red" alt="Archived"></td>
             <td>Zeigt alle Tests in Moodle an die noch nicht die volle Punktzahl erzielt haben.</td>
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/potential-Points">GitHub</a></td>
@@ -62,7 +62,7 @@
         <tr>
             <!-- Mahara-Portfolio-Ctrl-S -->
             <td><img src="https://github.com/BBBaden-Moodle-userscripts/Mahara-Portfolio-Ctrl-S/raw/main/icon/saveIcon.png" alt="ICON" width="30" height="30"></td>
-            <td>Mahara-Portfolio-Ctrl-S</td>
+            <td>Mahara-Portfolio-Ctrl-S <img src="https://img.shields.io/badge/archived-red" alt="Archived"></td>
             <td>Presses the save button when Ctrl + S is pressed on the Mahara site</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/Mahara-Portfolio-Ctrl-S">GitHub</a></td>
