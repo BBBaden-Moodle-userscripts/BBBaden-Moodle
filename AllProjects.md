@@ -41,7 +41,7 @@
             <td>potential-Points <img src="https://img.shields.io/badge/archived-red" alt="Archived"></td>
             <td>Zeigt alle Tests in Moodle an die noch nicht die volle Punktzahl erzielt haben.</td>
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
-            <td>1 weeks ago</td>
+            <td>2 weeks ago</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/potential-Points">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/potential-Points/main/potential_points.user.js">Install</a></td>
         </tr>
@@ -91,7 +91,7 @@
             <td>MediaPlayer</td>
             <td>Enhances the media playback experience on web pages by providing a convenient modal interface for MP4 and MP3 links</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
-            <td>1 weeks ago</td>
+            <td>2 weeks ago</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/MediaPlayer">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/MediaPlayer/main/MediaPlayer.user.js">Install</a></td>
         </tr>
