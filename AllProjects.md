@@ -21,7 +21,7 @@
             <td>What-is-my-approximate-grade</td>
             <td>Designed to calculate and display an approximate grade based on the points achieved in a Moodle quiz review</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
-            <td>1 weeks ago</td>
+            <td>2 weeks ago</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/What-is-my-approximate-grade/main/approximate_grade.user.js">Install</a></td>
         </tr>
@@ -31,7 +31,7 @@
             <td>quick-ID</td>
             <td>Öffnet einen Dialog, in dem Sie eine Kurs-ID eingeben können, um direkt dorthin weitergeleitet zu werden.</td>
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
-            <td>1 weeks ago</td>
+            <td>2 weeks ago</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/quick-ID">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/quick-ID/main/quick-ID.user.js">Install</a></td>
         </tr>
@@ -51,7 +51,7 @@
             <td>Download-All-Files</td>
             <td>Allows you to download files from a Moodle course and creates a zip archive containing all the downloaded files</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
-            <td>1 weeks ago</td>
+            <td>2 weeks ago</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/Download-All-Files">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/Download-All-Files/main/download-all-files.user.js">Install</a></td>
         </tr>
@@ -61,7 +61,7 @@
             <td>BBBUserScriptManager</td>
             <td>UserScript Manager for all uf our userscripts</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
-            <td>1 weeks ago</td>
+            <td>2 weeks ago</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/BBBUserScriptManager">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/BBBUserScriptManager/main/BBBUserScriptManager.user.js">Install</a></td>
         </tr>
@@ -81,7 +81,7 @@
             <td>StartPagePrettified</td>
             <td>Prettifies the Startpage</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
-            <td>1 weeks ago</td>
+            <td>2 weeks ago</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/StartPagePrettified">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/StartPagePrettified/main/StartPagePrettified.user.js">Install</a></td>
         </tr>
@@ -101,7 +101,7 @@
             <td>OptimizedContentList</td>
             <td>Optimizes the content list</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
-            <td>1 weeks ago</td>
+            <td>2 weeks ago</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/OptimizedContentList">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/OptimizedContentList/main/OptimizedContentList.user.js">Install</a></td>
         </tr>
