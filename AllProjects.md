@@ -111,7 +111,7 @@
             <td>moodle-scrollpos</td>
             <td>JS-Skript für Tampermonkey um in Moodle-Kursen (im Boost Design) die Scroll-Position zu speichern und wiederherzustellen.</td>
             <td><a href="https://github.com/xykro">@xykro</a></td>
-            <td>1 years ago</td>
+            <td>2 years ago</td>
             <td><a href="https://github.com/BBBelektronik/moodle-scrollpos">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBelektronik/moodle-scrollpos/main/moodle_scrollpos.user.js">Install</a></td>
         </tr>
