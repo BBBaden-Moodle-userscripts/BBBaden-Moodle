@@ -118,31 +118,3 @@
     </tbody>
 </table>
 
-## UserStyles
-
-<table>
-    <thead>
-        <tr>
-            <th>Icon</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Author</th>
-            <th>Last Updated</th>
-            <th>Link</th>
-            <th>Install</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <!-- CompactMoodle -->
-            <td></td>
-            <td>CompactMoodle</td>
-            <td>The Moodle designe is to blown up? Even after zooming out to 50%? This Addon eliminates empty space and tidies up the design.</td>
-            <td><a href="https://github.com/Hutch79">@Hutch79</a></td>
-            <td>6 months ago</td>
-            <td><a href="https://github.com/Hutch79/CompactMoodle">GitHub</a></td>
-            <td><a href="https://raw.githubusercontent.com/Hutch79/CompactMoodle/main/compactMoodle.user.css">Install</a></td>
-        </tr>
-    </tbody>
-</table>
-
