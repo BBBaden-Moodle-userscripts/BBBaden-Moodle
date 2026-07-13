@@ -105,6 +105,16 @@
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/OptimizedContentList">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/OptimizedContentList/main/OptimizedContentList.user.js">Install</a></td>
         </tr>
+        <tr>
+            <!-- moodle-scrollpos -->
+            <td></td>
+            <td>moodle-scrollpos</td>
+            <td>JS-Skript für Tampermonkey um in Moodle-Kursen (im Boost Design) die Scroll-Position zu speichern und wiederherzustellen.</td>
+            <td><a href="https://github.com/xykro">@xykro</a></td>
+            <td>2 years ago</td>
+            <td><a href="https://github.com/BBBelektronik/moodle-scrollpos">GitHub</a></td>
+            <td><a href="https://raw.githubusercontent.com/BBBelektronik/moodle-scrollpos/main/moodle_scrollpos.user.js">Install</a></td>
+        </tr>
     </tbody>
 </table>
 
