@@ -71,7 +71,7 @@
             <td>Mahara-Portfolio-Ctrl-S <img src="https://img.shields.io/badge/archived-red" alt="Archived"></td>
             <td>Presses the save button when Ctrl + S is pressed on the Mahara site</td>
             <td><a href="https://github.com/PianoNic">@PianoNic</a></td>
-            <td>1 years ago</td>
+            <td>2 years ago</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/Mahara-Portfolio-Ctrl-S">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/Mahara-Portfolio-Ctrl-S/main/Mahara-Portfolio-Ctrl-S.user.js">Install</a></td>
         </tr>
