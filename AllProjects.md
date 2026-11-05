@@ -41,7 +41,7 @@
             <td>potential-Points <img src="https://img.shields.io/badge/archived-red" alt="Archived"></td>
             <td>Zeigt alle Tests in Moodle an die noch nicht die volle Punktzahl erzielt haben.</td>
             <td><a href="https://github.com/black-backdoor">@black-backdoor</a></td>
-            <td>9 months ago</td>
+            <td>10 months ago</td>
             <td><a href="https://github.com/BBBaden-Moodle-userscripts/potential-Points">GitHub</a></td>
             <td><a href="https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/potential-Points/main/potential_points.user.js">Install</a></td>
         </tr>
